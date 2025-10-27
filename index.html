@@ -1,10 +1,18 @@
-<html>
-<html lang="id">
+<html lang="id"> 
+<!-- Menentukan bahwa dokumen ini menggunakan bahasa Indonesia -->
 <head>
 <meta charset="UTF-8">
+<!-- Mengatur encoding karakter agar mendukung semua karakter (termasuk huruf dan simbol khusus) -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Supaya tampilan responsif di semua perangkat (desktop maupun mobile) -->
+
 <title>Tabel Kependudukan Purworejo 2024</title>
+<!-- Judul halaman yang tampil di tab browser -->
+
 <style>
+/* Bagian ini digunakan untuk mengatur tampilan halaman (CSS) */
+
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f2f6f2;
@@ -12,99 +20,46 @@
     margin: 0;
     padding: 20px;
   }
- .header {
+  /* Mengatur gaya umum halaman: jenis font, warna latar, dan jarak halaman */
+
+  .header {
     text-align: center;
     margin-bottom: 30px;
   }
+  /* Bagian header ditengahkan dan diberi jarak bawah */
 
   .header img {
     width: 120px;
     display: block;
     margin: 0 auto 10px auto;
   }
+  /* Logo Purworejo diatur agar tampil di tengah dengan ukuran tetap */
+
   .description {
     max-width: 700px;
-    margin: 15px auto 30px auto; /* 30px */
+    margin: 15px auto 30px auto;
     text-align: center;
     font-size: 14px;
     color: #333;
     line-height: 1.6;
     font-weight: bold;
   }
+  /* Deskripsi singkat di bawah judul, teks tebal dan rapi di tengah */
+
   h2 {
     color: #003a70;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5px;
   }
+  /* Judul utama diberi warna biru gelap dan ditebalkan */
 
   .updated {
     color: #777;
-    margin-bottom: 20px;
-     text-align: center;
-     margin-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: center;
   }
-
-  .controls {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    padding: 10px 18px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .btn-blue {
-    background-color: #007ad9;
-    color: white;
-  }
-
-  .btn-green {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  .btn-orange {
-    background-color: #f57c00;
-    color: white;
-  }
-
-  .btn-gray {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-
-  .year-buttons {
-    margin-left: 10px;
-  }
-
-  .year {
-    background-color: #e3eaf7;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .year.active {
-    background-color: #007ad9;
-    color: white;
-  }
-
-  input[type="search"] {
-    margin-left: auto;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
+  /* Menampilkan tanggal pembaruan data dengan warna abu dan posisi tengah */
 
   table {
     width: 100%;
@@ -114,80 +69,107 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
+  /* Mengatur tabel agar melebar penuh, dengan sudut membulat dan efek bayangan */
 
   thead {
     background-color: #003a70;
     color: white;
   }
+  /* Baris judul tabel (header) diberi warna biru tua dan teks putih */
 
   th, td {
     padding: 12px 15px;
     text-align: left;
   }
+  /* Mengatur jarak isi sel tabel dan rata kiri */
 
   tr:nth-child(even) {
     background-color: #f4f8ff;
   }
+  /* Memberi warna berbeda untuk setiap baris genap agar mudah dibaca */
 
   tr:hover {
     background-color: #eaf2ff;
   }
+  /* Memberi efek warna saat kursor diarahkan ke baris tabel */
 </style>
 </head>
+
 <body>
+<!-- Bagian utama halaman dimulai di sini -->
+
  <div class="container">
    <div class="header">
     <div class="overlay">
-     <img alt="Purworejo logo" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lambang_Kabupaten_Purworejo.png/250px-Lambang_Kabupaten_Purworejo.png" width="150"/>
-<h2>Jumlah Penduduk, Laju Pertumbuhan Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, dan Rasio Jenis Kelamin Penduduk Menurut Kecamatan di Kabupaten Purworejo, 2024</h2>
-<p class="updated">Terakhir Diperbarui: <strong>26 Februari 2024</strong></p>
 
-<div class="description">
-    Kabupaten Purworejo mencakup luas wilayah sekitar 1.081,45 km² dengan posisi astronomis di antara 109°47’28”–110°08’20” BT dan 7°32’–7°54’ LS. Batas administratif wilayah ini meliputi Kabupaten Kebumen di barat, Kabupaten Magelang dan Wonosobo di utara, Kabupaten Kulon Progo (DIY) di timur, dan Samudra Hindia di selatan sepanjang ±22 km. Topografi Purworejo sangat bervariasi, mencakup dataran rendah di selatan (terutama pesisir pantai), dataran aluvium di bagian tengah, hingga wilayah perbukitan dan pegunungan di utara dan timur.
-</div>
-</div>
+     <!-- Logo Kabupaten Purworejo -->
+     <img alt="Purworejo logo" height="150"
+     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lambang_Kabupaten_Purworejo.png/250px-Lambang_Kabupaten_Purworejo.png"
+     width="150"/>
 
-<table>
-  <thead>
-    <tr>
-      <th>Kecamatan</th>
-      <th>Jumlah Penduduk (Ribu)</th>
-      <th>Laju Pertumbuhan Penduduk per Tahun</th>
-      <th>Persentase Penduduk</th>
-      <th>Kepadatan Penduduk per km²</th>
-      <th>Rasio Jenis Kelamin Penduduk</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Grabag</td><td>50.573,0</td><td>1,70</td><td>6,42</td><td>778</td><td>101,0</td></tr>
-    <tr><td>Ngombol</td><td>35.826,0</td><td>1,56</td><td>4,54</td><td>648</td><td>98,0</td></tr>
-    <tr><td>Purwodadi</td><td>42.291,0</td><td>1,53</td><td>5,37</td><td>783</td><td>97,0</td></tr>
-    <tr><td>Bagelen</td><td>30.829,0</td><td>0,94</td><td>3,91</td><td>483</td><td>98,0</td></tr>
-    <tr><td>Kaligesing</td><td>32.339,0</td><td>1,20</td><td>4,10</td><td>432</td><td>101,0</td></tr>
-    <tr><td>Purworejo</td><td>85.483,0</td><td>-0,07</td><td>10,84</td><td>1.621</td><td>98,0</td></tr>
-    <tr><td>Banyu Urip</td><td>43.951,0</td><td>1,12</td><td>5,58</td><td>975</td><td>97,0</td></tr>
-    <tr><td>Bayan</td><td>52.699,0</td><td>1,49</td><td>6,69</td><td>1.220</td><td>99,0</td></tr>
-    <tr><td>Kutoarjo</td><td>62.866,0</td><td>0,99</td><td>7,98</td><td>1.686</td><td>98,0</td></tr>
-    <tr><td>Butuh</td><td>42.728,0</td><td>1,14</td><td>5,42</td><td>937</td><td>98,0</td></tr>
-    <tr><td>Pituruh</td><td>52.587,0</td><td>1,47</td><td>6,67</td><td>679</td><td>102,0</td></tr>
-    <tr><td>Kemiri</td><td>60.272,0</td><td>1,73</td><td>7,65</td><td>654</td><td>102,0</td></tr>
-    <tr><td>Bruno</td><td>54.551,0</td><td>2,16</td><td>6,92</td><td>503</td><td>107,0</td></tr>
-    <tr><td>Gebang</td><td>44.220,0</td><td>1,20</td><td>5,61</td><td>615</td><td>103,0</td></tr>
-    <tr><td>Loano</td><td>38.891,0</td><td>1,30</td><td>4,93</td><td>724</td><td>102,0</td></tr>
-    <tr><td>Bener</td><td>58.159,0</td><td>1,81</td><td>7,38</td><td>618</td><td>103,0</td></tr>
-    <tr><td><b>Purworejo</b></td><td><b>788.265,0</b></td><td><b>1,29</b></td><td><b>100,00</b></td><td><b>762</b></td><td><b>100,0</b></td></tr>
-  </tbody>
-</table>
+     <!-- Judul Halaman -->
+     <h2>Jumlah Penduduk, Laju Pertumbuhan Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, dan Rasio Jenis Kelamin Penduduk Menurut Kecamatan di Kabupaten Purworejo, 2024</h2>
 
-<script>
-// efek klik tombol tahun
-document.querySelectorAll('.year').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.year').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+     <!-- Informasi Pembaruan -->
+     <p class="updated">Terakhir Diperbarui: <strong>26 Februari 2024</strong></p>
+
+     <!-- Deskripsi Singkat Wilayah -->
+     <div class="description">
+        Kabupaten Purworejo mencakup luas wilayah sekitar 1.081,45 km² dengan posisi astronomis di antara 109°47’28”–110°08’20” BT dan 7°32’–7°54’ LS. 
+        Batas administratif wilayah ini meliputi Kabupaten Kebumen di barat, Kabupaten Magelang dan Wonosobo di utara, 
+        Kabupaten Kulon Progo (DIY) di timur, dan Samudra Hindia di selatan sepanjang ±22 km. 
+        Topografi Purworejo sangat bervariasi, mencakup dataran rendah di selatan (terutama pesisir pantai), 
+        dataran aluvium di bagian tengah, hingga wilayah perbukitan dan pegunungan di utara dan timur.
+     </div>
+    </div>
+  </div>
+
+  <!-- Tabel Data Kependudukan -->
+  <table>
+    <thead>
+      <tr>
+        <th>Kecamatan</th>
+        <th>Jumlah Penduduk (Ribu)</th>
+        <th>Laju Pertumbuhan Penduduk per Tahun</th>
+        <th>Persentase Penduduk</th>
+        <th>Kepadatan Penduduk per km²</th>
+        <th>Rasio Jenis Kelamin Penduduk</th>
+      </tr>
+      <!-- Header tabel berisi nama kolom data -->
+    </thead>
+
+    <tbody>
+      <!-- Data tiap kecamatan -->
+      <tr><td>Grabag</td><td>50.573,0</td><td>1,70</td><td>6,42</td><td>778</td><td>101,0</td></tr>
+      <tr><td>Ngombol</td><td>35.826,0</td><td>1,56</td><td>4,54</td><td>648</td><td>98,0</td></tr>
+      <tr><td>Purwodadi</td><td>42.291,0</td><td>1,53</td><td>5,37</td><td>783</td><td>97,0</td></tr>
+      <tr><td>Bagelen</td><td>30.829,0</td><td>0,94</td><td>3,91</td><td>483</td><td>98,0</td></tr>
+      <tr><td>Kaligesing</td><td>32.339,0</td><td>1,20</td><td>4,10</td><td>432</td><td>101,0</td></tr>
+      <tr><td>Purworejo</td><td>85.483,0</td><td>-0,07</td><td>10,84</td><td>1.621</td><td>98,0</td></tr>
+      <tr><td>Banyu Urip</td><td>43.951,0</td><td>1,12</td><td>5,58</td><td>975</td><td>97,0</td></tr>
+      <tr><td>Bayan</td><td>52.699,0</td><td>1,49</td><td>6,69</td><td>1.220</td><td>99,0</td></tr>
+      <tr><td>Kutoarjo</td><td>62.866,0</td><td>0,99</td><td>7,98</td><td>1.686</td><td>98,0</td></tr>
+      <tr><td>Butuh</td><td>42.728,0</td><td>1,14</td><td>5,42</td><td>937</td><td>98,0</td></tr>
+      <tr><td>Pituruh</td><td>52.587,0</td><td>1,47</td><td>6,67</td><td>679</td><td>102,0</td></tr>
+      <tr><td>Kemiri</td><td>60.272,0</td><td>1,73</td><td>7,65</td><td>654</td><td>102,0</td></tr>
+      <tr><td>Bruno</td><td>54.551,0</td><td>2,16</td><td>6,92</td><td>503</td><td>107,0</td></tr>
+      <tr><td>Gebang</td><td>44.220,0</td><td>1,20</td><td>5,61</td><td>615</td><td>103,0</td></tr>
+      <tr><td>Loano</td><td>38.891,0</td><td>1,30</td><td>4,93</td><td>724</td><td>102,0</td></tr>
+      <tr><td>Bener</td><td>58.159,0</td><td>1,81</td><td>7,38</td><td>618</td><td>103,0</td></tr>
+      <tr><td><b>Purworejo</b></td><td><b>788.265,0</b></td><td><b>1,29</b></td><td><b>100,00</b></td><td><b>762</b></td><td><b>100,0</b></td></tr>
+      <!-- Baris terakhir menunjukkan total keseluruhan data kabupaten -->
+    </tbody>
+  </table>
+
+  <script>
+  // Script JavaScript sederhana untuk efek tombol tahun (jika ada)
+  document.querySelectorAll('.year').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.year').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
   });
-});
-</script>
+  </script>
 
 </body>
 </html>
